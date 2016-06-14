@@ -1,10 +1,15 @@
 import React from "react";
 
-export default class Layout extends React.Component{
+import ContactsList from './ContactsList'
+
+
+export default class App extends React.Component{
+
     render(){
         return(
             <div>
-                Hello world react lovers! OPPS.
+                <h1>Contact List</h1>
+                <ContactsList contacts = {this.props.contacts} />
             </div>
         );
     }
